@@ -1,0 +1,120 @@
+/*Remise à 0 des marges par défauts de certains éléments*/
+div, ul, li, p, h1, h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.page {
+    width: 850px;
+    margin: auto;
+    background-color: white;
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    border-radius: 4px;
+    height: 300px;
+    background: url("cookies.jpg");
+    background-position: center;
+    box-shadow: 1px 1px 2px gray;
+    margin-bottom: 12px;
+}
+
+.main-title {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 24px auto 0;
+    border-bottom: 1px solid silver;
+}
+
+.overview-flex {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    list-style: none;
+}
+
+.overview-item {
+    margin: 16px auto;
+    font-size: 0.9rem;
+    text-align: center;
+    width: 80px;
+}
+
+.circled-item {
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 1px solid silver;
+    line-height: 60px;
+    width: 60px;
+    margin: 10px;
+    text-align: center;
+}
+
+.difficulty {
+    margin: 16px 0px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.ranking {
+    line-height: 60px;
+    margin: 10.8px 0;
+}
+
+.servings {
+    margin: 16px 0;
+}
+
+/* Boutons pour éventuel ajout de code js */
+.servings-button {
+    background: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Style du tableau */
+.ingredients {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+.ingredients caption {
+    margin: 12px 8px;
+    caption-side: bottom;
+    text-align: left;
+    color: gray;
+    font-size: 0.8rem;
+}
+
+.ingredients tr {
+    border-top: 1px solid silver;
+    padding: 12px 0;
+}
+
+.ingredients tr:nth-child(even) {
+    background: rgb(232, 232, 232);
+}
+
+tr td {
+    width: 30%;
+    padding: 4px 8px;
+}
+
+tr td:first-child {
+    width: 10%;
+}
+
+.ingredients tr:first-child, tr td:first-child {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
